@@ -1,7 +1,7 @@
 # VRShootingGame
  VRで遊べるシューティングゲーム
 
-## 環境
+## ビルド環境
 - Unity Version : 2020.3.1f1
 
 ## その他
