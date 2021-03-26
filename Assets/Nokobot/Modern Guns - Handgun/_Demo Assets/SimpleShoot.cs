@@ -49,15 +49,15 @@ public class SimpleShoot : MonoBehaviour
     {
         source.PlayOneShot(fire);
 
-        if (muzzleFlashPrefab)
-        {
-            //Create the muzzle flash
-            GameObject tempFlash;
-            tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
+        //if (muzzleFlashPrefab)
+        //{
+        //    //Create the muzzle flash
+        //    GameObject tempFlash;
+        //    tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
 
-            //Destroy the muzzle flash effect
-            Destroy(tempFlash, destroyTimer);
-        }
+        //    //Destroy the muzzle flash effect
+        //    Destroy(tempFlash, destroyTimer);
+        //}
 
         //cancels if there's no bullet prefeb
         if (!bulletPrefab)
