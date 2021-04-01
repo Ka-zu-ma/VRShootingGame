@@ -319,7 +319,7 @@ Animator:
   m_GameObject: {fileID: 334737479}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 03d1fe4e93c9d4445b3a611df2ee5713, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7a812560d460a844fb75bd595a4530c5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   source: {fileID: 334737480}
   gunAnimator: {fileID: 334737481}
   barrelLocation: {fileID: 334737483}
-  casingExitLocation: {fileID: 0}
+  casingExitLocation: {fileID: 1179886211}
   destroyTimer: 2
   shotPower: 500
   ejectPower: 150
@@ -453,6 +453,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1179886211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 921090566749605378, guid: 7e7f2840eb6a6294fb9d04582dbf8079,
+    type: 3}
+  m_PrefabInstance: {fileID: 334737478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1616114197
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +608,10 @@ PrefabInstance:
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}

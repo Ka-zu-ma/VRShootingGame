@@ -26,8 +26,8 @@ public class SimpleShoot : MonoBehaviour {
         if (barrelLocation == null)
             barrelLocation = transform;
 
-        //if (gunAnimator == null)
-        //    gunAnimator = GetComponentInChildren<Animator>();
+        if (gunAnimator == null)
+            gunAnimator = GetComponentInChildren<Animator>();
     }
 
     void Update() {
@@ -37,6 +37,7 @@ public class SimpleShoot : MonoBehaviour {
             // 右人差し指トリガーを押したとき
             //Calls animation on the gun that has the relevant animation events that will fire
             gunAnimator.SetTrigger("Fire");
+            source.PlayOneShot(fire);
         }
         Debug.Log("Updateの中");
     }
@@ -44,7 +45,7 @@ public class SimpleShoot : MonoBehaviour {
     //This function creates the bullet behavior
     void Shoot() {
         Debug.Log("Shoot入った");
-        source.PlayOneShot(fire);
+        Debug.Log(bulletPrefab.name, bulletPrefab);
 
         if (muzzleFlashPrefab) {
             //create the muzzle flash
@@ -60,10 +61,12 @@ public class SimpleShoot : MonoBehaviour {
 
         // Create a bullet and add force on it in direction of the barrel
         Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+        Debug.Log("Shoot最後まできた");
     }
 
     //This function creates a casing at the ejection slot
     void CasingRelease() {
+        Debug.Log("CasingReleas入った");
         //Cancels function if ejection slot hasn't been set or there's no casing
         if (!casingExitLocation || !casingPrefab) { return; }
 
@@ -77,6 +80,7 @@ public class SimpleShoot : MonoBehaviour {
 
         //Destroy casing after X seconds
         Destroy(tempCasing, destroyTimer);
+        Debug.Log("CasingReleas最後まできた");
     }
 
 }
