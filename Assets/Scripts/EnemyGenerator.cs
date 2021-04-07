@@ -3,24 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour {
+    [Header("Set Enemy Prefab")]
     //敵プレハブ
-    public GameObject enemyPrefab;
+    [SerializeField]private GameObject enemyPrefab;
+    [Header("Set Interval Min and Max")]
     //時間間隔の最小値
-    public float minTime = 2f;
+    [Range(1f, 3f)]
+    [SerializeField] private float minTime = 2f;
     //時間間隔の最大値
-    public float maxTime = 5f;
+    [Range(5f, 10f)]
+    [SerializeField] private float maxTime = 5f;
+    [Header("Set X Position Min and Max")]
     //X座標の最小値
-    public float xMinPosition = -10f;
+    [Range(-10f, 0f)]
+    [SerializeField] private float xMinPosition = -10f;
     //X座標の最大値
-    public float xMaxPosition = 10f;
+    [Range(0f, 10f)]
+    [SerializeField] private float xMaxPosition = 10f;
+    [Header("Set Y Position Min and Max")]
     //Y座標の最小値
-    public float yMinPosition = 0f;
+    [Range(-10f, 0f)]
+    [SerializeField] private float yMinPosition = 0f;
     //Y座標の最大値
-    public float yMaxPosition = 10f;
+    [Range(0f, 20f)]
+    [SerializeField] private float yMaxPosition = 10f;
+    [Header("Set Z Position Min and Max")]
     //Z座標の最小値
-    public float zMinPosition = 10f;
+    [Range(10f, 20f)]
+    [SerializeField] private float zMinPosition = 10f;
     //Z座標の最大値
-    public float zMaxPosition = 20f;
+    [Range(20f, 30f)]
+    [SerializeField] private float zMaxPosition = 20f;
     //敵生成時間間隔
     private float interval;
     //経過時間
