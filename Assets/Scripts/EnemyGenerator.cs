@@ -11,7 +11,7 @@ public class EnemyGenerator : MonoBehaviour {
     [Range(1f, 3f)]
     [SerializeField] private float minTime = 2f;
     //時間間隔の最大値
-    [Range(5f, 10f)]
+    [Range(3f, 5f)]
     [SerializeField] private float maxTime = 5f;
     [Header("Set X Position Min and Max")]
     //X座標の最小値
@@ -22,8 +22,8 @@ public class EnemyGenerator : MonoBehaviour {
     [SerializeField] private float xMaxPosition = 10f;
     [Header("Set Y Position Min and Max")]
     //Y座標の最小値
-    [Range(-10f, 0f)]
-    [SerializeField] private float yMinPosition = 0f;
+    [Range(1f, 5f)]
+    [SerializeField] private float yMinPosition = 1f;
     //Y座標の最大値
     [Range(0f, 20f)]
     [SerializeField] private float yMaxPosition = 10f;

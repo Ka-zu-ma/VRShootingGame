@@ -565,11 +565,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1848959793362162186, guid: f1909aa181fa84d4a8eb81475fb640fa,
     type: 3}
-  minTime: 2
-  maxTime: 5
+  minTime: 1
+  maxTime: 3
   xMinPosition: -10
   xMaxPosition: 10
-  yMinPosition: 0
+  yMinPosition: 1
   yMaxPosition: 10
   zMinPosition: 10
   zMaxPosition: 20
