@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyGenerator : MonoBehaviour {
+public class TargetGenerator : MonoBehaviour {
     [Header("Set Enemy Prefab")]
     //敵プレハブ
     [SerializeField]private GameObject enemyPrefab;
