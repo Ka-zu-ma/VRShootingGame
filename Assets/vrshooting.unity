@@ -347,22 +347,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 0}
   casingPrefab: {fileID: 0}
-  muzzleFlashPrefab: {fileID: 1782395880954752, guid: 3dd9cf2e209c504448f1c4c6835675cf,
-    type: 3}
+  muzzleFlashPrefab: {fileID: 0}
   fire: {fileID: 8300000, guid: d3247579c549643a5b3a95f9224eaf3c, type: 3}
   source: {fileID: 334737480}
-  gunAnimator: {fileID: 334737481}
-  barrelLocation: {fileID: 334737483}
-  casingExitLocation: {fileID: 1179886211}
+  gunAnimator: {fileID: 0}
+  barrelLocation: {fileID: 0}
+  casingExitLocation: {fileID: 0}
   destroyTimer: 2
   shotPower: 500
   ejectPower: 150
---- !u!4 &334737483 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8574493024766216783, guid: 7e7f2840eb6a6294fb9d04582dbf8079,
-    type: 3}
-  m_PrefabInstance: {fileID: 334737478}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &334737484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,12 +601,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 477154, guid: ce816f2e6abb0504092c23ed9b970dfd,
     type: 3}
   m_PrefabInstance: {fileID: 1951198833}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1179886211 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 921090566749605378, guid: 7e7f2840eb6a6294fb9d04582dbf8079,
-    type: 3}
-  m_PrefabInstance: {fileID: 334737478}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184343989
 GameObject:
