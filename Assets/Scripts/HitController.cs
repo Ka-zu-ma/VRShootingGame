@@ -9,6 +9,8 @@ public class HitController : MonoBehaviour {
         //衝突したオブジェクトがBulletのとき
         if (collision.gameObject.CompareTag("Bullet")) {
             Debug.Log("Targetと弾が衝突しました");
+            // 衝突したときにスコアを更新する
+            GameObject.Find("Canvas").GetComponent<SetScoreController>().AddScore();
             //Targetを削除
             Destroy(gameObject);
             //弾を削除
