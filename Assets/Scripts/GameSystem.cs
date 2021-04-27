@@ -8,4 +8,13 @@ public class GameSystem : MonoBehaviour {
     public void StartGame() {
         SceneManager.LoadScene("vrshooting");
     }
+
+	//　ゲーム終了ボタンを押したら実行する
+	public void EndGame() {
+#if　UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
+	}
 }
