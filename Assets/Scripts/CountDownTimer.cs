@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class CountDownTimer : MonoBehaviour {
     //　トータル制限時間
@@ -14,12 +14,12 @@ public class CountDownTimer : MonoBehaviour {
     private float seconds;
     //　前回Update時の秒数
     private float oldSeconds;
-    private Text timerText;
+    private TextMeshProUGUI timerText;
 
     void Start() {
         totalTime = minute * 60 + seconds;
         oldSeconds = 0f;
-        timerText = GetComponentInChildren<Text>();
+        timerText = GetComponent<TextMeshProUGUI>();
     }
 
     void Update() {
