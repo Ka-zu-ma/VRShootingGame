@@ -14,6 +14,9 @@ public class SetScoreController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         scoreText.GetComponent<Text>().text = "スコア:" + score.ToString("D");
+        // スコアを保存
+        PlayerPrefs.SetInt("SCORE", score);
+        PlayerPrefs.Save();
     }
 
     public void AddScore() {
