@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CountDownTimer : MonoBehaviour {
     //　トータル制限時間
@@ -43,6 +44,7 @@ public class CountDownTimer : MonoBehaviour {
         //　制限時間以下になったらコンソールに『制限時間終了』という文字列を表示する
         if (totalTime <= 0f) {
             Debug.Log("制限時間終了");
+            SceneManager.LoadScene("Result");
         }
     }
 }
